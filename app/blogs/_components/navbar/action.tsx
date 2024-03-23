@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 import { BookOpenText, Medal, User } from "lucide-react";
 import UserMenu from "./UserMenu";
 import getCurrentUser from "@/app/actions/getCurrentUser";
+import { useRouter } from "next/navigation";
 
 export const Actions = async () => {
-
 
     const user = await getCurrentUser();
 

@@ -1,6 +1,7 @@
-import AuthLayout from "../(auth)/layout";
-import { SignInButton } from "@clerk/nextjs";
 import { NavBar } from "./_components/navbar";
+import LoginModal from "@/components/modal/LoginModal";
+import ClientOnly from "./_components/navbar/ClientOnly";
+import RegisterModal from "@/components/modal/RegisterModal";
 
 const BrowseLayout = ({ children }: {
     children: React.ReactNode;
@@ -9,9 +10,11 @@ const BrowseLayout = ({ children }: {
     return (
         <>
             <NavBar />
+            <ClientOnly>
+              <LoginModal />
+              <RegisterModal />
+            </ClientOnly>
             <div className="flex h-full pt-20">
-            <h1>FitneHeal</h1>
-            <SignInButton />
                 {children}
             </div>
            

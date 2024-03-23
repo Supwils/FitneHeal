@@ -1,9 +1,14 @@
+import LoginModal from "@/components/modal/LoginModal";
+import RegisterModal from "@/components/modal/RegisterModal";
+import ClientOnly from "../_components/navbar/ClientOnly";
 
 
 const HomePage = () => { 
     return (
         <div>
-            HomePage
+            <div>
+                Home
+            </div>
         </div>
     )
 }

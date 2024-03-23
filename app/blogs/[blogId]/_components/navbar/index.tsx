@@ -6,7 +6,7 @@ import { Logo } from "./logo"
 export const NavBar = async () => {
     const self = false;
     return (
-        <nav className="fixed top-0 h-15 bg-amber-400
+        <nav className="fixed top-0 h-50 bg-amber-400
                         items-center flex w-full z-[50] px-1
                         justify-between shadow-lg">
             <Logo />
